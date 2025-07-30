@@ -186,3 +186,84 @@ DNC can optionally discover peers from a public JSON endpoint defined by the env
   { "ip": "203.0.113.10", "port": 369, "address": "DNC-OptionalAddress1" },
   { "ip": "203.0.113.11", "port": 369 }
 ]
+
+# DNC Client (Windows)
+
+## Quick Start
+
+On Windows (Command Prompt), set the discovery URL for the current session:
+
+```bat
+set DNC_DISCOVERY_URL=https://example.org/dnc/peers.json
+```
+
+> **Note:** Use code with caution.
+
+Then start the client. In the GUI, the **Network** tab's **Discovery** button will attempt to fetch additional peers from that URL.
+
+---
+
+## Security Notes
+
+- **Private keys** are stored locally under your user profile.  
+  Back up your keys securely and **never share them**.
+- The client exposes a **TCP ping server** on the selected port for liveness checks.  
+  Choose ports responsibly and apply firewall rules where appropriate.
+- This software is provided **without warranty**.  
+  Review the license terms before production use.
+
+---
+
+## Troubleshooting
+
+- If the **GUI does not start**, verify that **Python** and **Tkinter** are properly installed.
+- If **peer counts stay at zero**:
+  - Ensure multiple machines are using the same port and are on the same LAN.
+  - Check firewall and router rules.
+  - Verify the `DNC_DISCOVERY_URL` if you rely on Internet-wide discovery.
+- If **mining does not start**:
+  - Ensure your account is created or logged in, and try again.
+- Check logs in the console for error messages printed by the adapter or core.
+
+---
+
+## Contributing and Forks
+
+Forks are welcome!  
+You are free to improve, update, and publish better versions of the code.
+
+- Please submit **pull requests** with clear descriptions and rationale for your changes.
+- For larger proposals, open an **issue** to discuss design choices before implementation.
+
+**Suggested contribution areas:**
+- Additional platforms and installers
+- Discovery backends and NAT traversal helpers
+- Extended wallet and token logic
+- Performance and robustness improvements
+- Documentation and examples
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+Copyright (c) 2025  
+**Kaoru Aguilera Katayama**
+
+---
+
+## Citation and Original Paper
+
+For theoretical background and the broader framework, see the original paper:
+
+**[https://doi.org/10.17605/OSF.IO/AYHPJ](https://doi.org/10.17605/OSF.IO/AYHPJ)**
+
+If you build on this work, please **cite the paper and reference this repository**.
+
+---
+
+## Acknowledgments
+
+Thanks Satoshi Nakamoto for inspiring me to create DNC
+
