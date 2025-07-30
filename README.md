@@ -218,10 +218,6 @@ C:\Users\YOUR_USERNAME\.diac_dnc\gui_config.json
 ## Troubleshooting
 
 - If the **GUI does not start**, verify that **Python** and **Tkinter** are properly installed.
-- If **peer counts stay at zero**:
-  - Ensure multiple machines are using the same port and are on the same LAN.
-  - Check firewall and router rules.
-  - Verify the `DNC_DISCOVERY_URL` if you rely on Internet-wide discovery.
 - If **mining does not start**:
   - Ensure your account is created or logged in, and try again.
 - Check logs in the console for error messages printed by the adapter or core.
