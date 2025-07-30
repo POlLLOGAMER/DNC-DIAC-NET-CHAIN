@@ -20,7 +20,7 @@ A distributed economic protocol with peer discovery, wallet, and mining — desi
   - [Mining](#mining)
   - [Network](#network)
 - [Creating Your Own DNC Subnetwork](#creating-your-own-dnc-subnetwork)
-- [Peer Discovery URL (Optional, Internet-wide)](#peer-discovery-url-optional-internet-wide)
+- [How Peer Discovery Works](#how-peer-discovery-works)
 - [Security Notes](#security-notes)
 - [Troubleshooting](#troubleshooting)
 - [Contributing and Forks](#contributing-and-forks)
@@ -177,31 +177,12 @@ You can change the network later from the Network tab.
 
 ---
 
-## Peer Discovery URL (Optional, Internet-wide)
+## How Peer Discovery Works
 
-DNC can optionally discover peers from a public JSON endpoint defined by the environment variable `DNC_DISCOVERY_URL`. The endpoint should return a JSON array of objects like:
+- **LAN Discovery:** All nodes using the same port on a local network will find each other automatically via LAN multicast.
+- **Manual Peer Add:** To connect globally, simply share your IP address and port with others and add peers manually in the Network tab.
+- **Peer-to-Peer Exchange:** After connecting to at least one peer, click “Discover Peers (P2P)” in the Network tab to automatically request and merge peer lists from all your known peers. This expands your connectivity organically without any central server or discovery URL.
 
-```json
-[
-  { "ip": "203.0.113.10", "port": 369, "address": "DNC-OptionalAddress1" },
-  { "ip": "203.0.113.11", "port": 369 }
-]
-```
-# DNC Client (Windows)
-
-## Quick Start
-
-On Windows (Command Prompt), set the discovery URL for the current session:
-
-```bat
-set DNC_DISCOVERY_URL=https://example.org/dnc/peers.json
-```
-
-> **Note:** Use code with caution.
-
-Then start the client. In the GUI, the **Network** tab's **Discovery** button will attempt to fetch additional peers from that URL.
-
----
 
 ## Security Notes
 
