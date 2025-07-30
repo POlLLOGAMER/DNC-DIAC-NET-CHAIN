@@ -93,7 +93,7 @@ LAN multicast group: **239.255.124.69:39369** (used for autodiscovery among node
 
 ## Quick Start (Prebuilt .zip for Windows)
 
-If you downloaded `DNC program.zip`:
+If you downloaded `DNC Program.zip`:
 
 1.  Ensure Python for Windows is installed (for future extensibility; the prebuilt executable itself does not require Python to run).
 2.  Extract `DNC program.zip` to a folder.
