@@ -186,7 +186,7 @@ DNC can optionally discover peers from a public JSON endpoint defined by the env
   { "ip": "203.0.113.10", "port": 369, "address": "DNC-OptionalAddress1" },
   { "ip": "203.0.113.11", "port": 369 }
 ]
-
+```
 # DNC Client (Windows)
 
 ## Quick Start
