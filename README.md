@@ -212,6 +212,26 @@ Then start the client. In the GUI, the **Network** tab's **Discovery** button wi
 - This software is provided **without warranty**.  
   Review the license terms before production use.
 
+## Key Storage Location
+
+Your DIAC wallet’s **public and private keys** are stored **locally on your computer**.  
+They are **never uploaded or sent over the network**.
+
+**Default location on Windows:**
+```plaintext
+C:\Users\YOUR_USERNAME\.diac_dnc\gui_config.json
+```
+
+**Default location on Linux/Mac:**
+```plaintext
+/home/YOUR_USERNAME/.diac_dnc/gui_config.json
+```
+
+- This folder and file are created automatically on first launch.
+- To **move your wallet to another device**, just copy this file to the same location.
+- **WARNING:** If you delete or lose this file, you lose access to your wallet and all your DIAC.
+- Make regular backups (preferably encrypted or on a secure USB drive).
+
 ---
 
 ## Troubleshooting
