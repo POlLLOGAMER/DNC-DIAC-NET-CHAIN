@@ -250,6 +250,66 @@ C:\Users\YOUR_USERNAME\.diac_dnc\gui_config.json
 - You can safely delete `__pycache__` folders if you encounter weird import errors, then recompile.
 - Make sure your Python installation includes Tkinter (default for most Windows installers).
 
+
+## New Features and Improvements (2025-07)
+
+### Enhanced Peer-to-Peer & Network Functionality
+- **Live Peer Health Checking:**  
+  The app now includes direct TCP ping checks to verify peer liveness, making network status more reliable and visible in the Network tab.
+- **Real Peer Discovery Exchange:**  
+  Peer discovery now includes a real peer list exchange and automatic merging, so adding a single peer can rapidly expand your network without any centralized server.
+- **Manual Peer Addition:**  
+  Users can add new peers by IP and port directly from the Network tab, even labeling addresses for easier management.
+
+### Robust Reputation and Security System
+- **Reputation Engine Integration:**  
+  Each peer is now tracked locally with a score, visible and adjustable from the Security tab, enabling future slashing and rewards.
+- **Robust Cross-Platform Data Storage:**  
+  Reputation and configuration data is always stored in your user profile directory (not the current folder), for safety and portability.
+- **Safe Path Handling:**  
+  All file and directory paths now use Python's `Path` objects to avoid Windows/Linux bugs and ensure full compatibility.
+
+### Wallet and Key Management
+- **Account Import and Export:**  
+  Users can log in using existing public/private keys, making account migration and backup seamless.
+- **Key Visibility:**  
+  The client allows you to securely view (and copy) your address, public key, and private key from the Home/Account tab.
+
+### Mining Engine and Metrics
+- **Start/Stop Mining from UI:**  
+  Mining can now be started and stopped from the Mining tab, with visual feedback of current mining status.
+- **Mining Metrics:**  
+  The app displays total rewards, hourly rates, completed challenges, and calculated efficiency—all live!
+
+### Proof of Storage Demo
+- **Local Self-Challenge:**  
+  A Proof-of-Storage demo allows users to load a file fragment and verify its integrity, previewing future distributed storage capabilities.
+
+### Guardians and Recovery
+- **Guardian Registration:**  
+  Users can register up to three guardians (2-of-3) for key recovery, all accessible and managed through the Security tab.
+- **Simulated Recovery Flow:**  
+  The GUI demonstrates guardian-assisted account recovery, allowing safe public key rotation in a multi-guardian scenario.
+
+### UI and Usability
+- **Responsive Tabs:**  
+  The GUI now enables/disables tabs based on login status, preventing accidental access before account setup.
+- **Configurable Network Mode:**  
+  Easily switch between the global "central" network (port 369) and any custom subnet with just a few clicks—no need to restart.
+- **Automatic Data Directory Creation:**  
+  The client now automatically creates required folders (such as `.diac_dnc`) under your user directory if missing.
+
+### Troubleshooting & Error Handling
+- **Detailed Error Messages:**  
+  All major actions now show user-friendly error messages, making debugging easier for new users.
+- **Clear Startup Requirements:**  
+  The README and codebase now guide you through missing dependencies (e.g., Tkinter) and common mistakes.
+
+---
+
+**These features collectively make DNC more robust, user-friendly, and secure—ready for both power users and newcomers.**
+
+
 ---
 
 ## Contributing and Forks
