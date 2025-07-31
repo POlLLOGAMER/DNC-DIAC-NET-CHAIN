@@ -234,6 +234,22 @@ C:\Users\YOUR_USERNAME\.diac_dnc\gui_config.json
   - Ensure your account is created or logged in, and try again.
 - Check logs in the console for error messages printed by the adapter or core.
 
+## Changelog / Recent Changes
+
+- **2025-07**
+  - Fixed a critical bug with `Reputation` initialization. Now supports both signature variants (`base_path` as a `Path` object, or no argument).
+  - All reputation/config data is now stored using `Path` objects for full Windows and cross-platform compatibility.
+  - The README has been updated with notes on cache folders and correct troubleshooting tips.
+  - Build and troubleshooting instructions verified on Windows 11 with Python 3.13.
+  - Improved robustness: the app now auto-creates the `~/.diac_dnc/` folder if missing.
+  - More informative error messages if required modules or files are missing at launch.
+
+## Troubleshooting (Updated)
+
+- If you see `TypeError: unsupported operand type(s) for /: 'str' and 'str'`, make sure you are using the latest `diac_dnc_adapter.py`, which passes `Path` (not `str`) to `Reputation`.
+- You can safely delete `__pycache__` folders if you encounter weird import errors, then recompile.
+- Make sure your Python installation includes Tkinter (default for most Windows installers).
+
 ---
 
 ## Contributing and Forks
