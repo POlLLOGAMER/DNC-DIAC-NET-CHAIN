@@ -114,10 +114,13 @@ Below is a reproducible set of steps using PyInstaller on Windows. Replace `<You
     "C:\Users\<YourUser>\AppData\Local\Programs\Python\Python313\python.exe" -m pip install pyinstaller
     ```
 2.  From the project directory (cd into the folder containing the source files), build a single-file, windowed executable with a custom icon and name:
+   ```bat
+cd C:\Users\<YourUser>... (path to your folder where you have the .zip descompressed)
+```
     ```bat
 "C:\Users\<YourUser>\AppData\Local\Programs\Python\Python313\python.exe" ^
  -m PyInstaller --onefile --windowed --clean ^
- --icon="C:\Users\Kaoru\Documents\DIAC INFINITY 2 DNC\dnc2\diac_icon.ico" ^
+ --icon="C:\Users\<YourName>\Documents\DIAC INFINITY 2 DNC\dnc2\diac_icon.ico" ^
  --name "DIAC NET Client" ^
  --paths . ^
  --collect-all diac_dnc ^
