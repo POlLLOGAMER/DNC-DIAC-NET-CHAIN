@@ -117,6 +117,7 @@ Below is a reproducible set of steps using PyInstaller on Windows. Replace `<You
    ```bat
 cd C:\Users\<YourUser>... (path to your folder where you have the .zip descompressed)
    ```
+
    ```bat
 "C:\Users\<YourUser>\AppData\Local\Programs\Python\Python313\python.exe" ^
  -m PyInstaller --onefile --windowed --clean ^
@@ -126,7 +127,7 @@ cd C:\Users\<YourUser>... (path to your folder where you have the .zip descompre
  --collect-all diac_dnc ^
  --debug all ^
  diac_client.py
-    ```
+   ```
 
 3.  After completion, the executable will appear under the `dist` folder:
     `dist\DIAC NET Client.exe`
