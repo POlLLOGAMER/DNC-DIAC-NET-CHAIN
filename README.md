@@ -47,6 +47,7 @@ The desktop client is implemented in Python with a clean Tkinter GUI and a simpl
 - Optional Internet-wide peer discovery via a single environment variable.
 - No third-party dependencies beyond the Python standard library and Tkinter.
 - Open for forks, extensions, and research.
+- If everyone disconnects and deletes their information, all accounts will be deleted. It could also be used as a cleaner for inactive accounts or bots.
 
 ---
 
