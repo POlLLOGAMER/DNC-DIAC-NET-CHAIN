@@ -354,6 +354,8 @@ For theoretical background and the broader framework, see the original paper:
 
 If you build on this work, please **cite the paper and reference this repository**. (Currently unavailable because OSF accidentally disabled my account.)
 
+## Alternative method to download the paper through Pinata IPFS
+**[https://ipfs.io/ipfs/bafybeigxajdmeelcrefuiiofm2mihohg5izd4va3u2jt76eqwkti4xoovq)**
 ---
 
 ## Acknowledgments
