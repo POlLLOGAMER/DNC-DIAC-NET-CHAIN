@@ -127,6 +127,7 @@ cd C:\Users\<YourUser>... (path to your folder where you have the .zip descompre
  --debug all ^
  diac_client.py
     ```
+
 3.  After completion, the executable will appear under the `dist` folder:
     `dist\DIAC NET Client.exe`
 
