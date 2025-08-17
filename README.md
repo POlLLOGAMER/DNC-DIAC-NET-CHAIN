@@ -352,7 +352,7 @@ For theoretical background and the broader framework, see the original paper:
 
 **[https://doi.org/10.17605/OSF.IO/AYHPJ](https://doi.org/10.17605/OSF.IO/AYHPJ)**
 
-If you build on this work, please **cite the paper and reference this repository**.
+If you build on this work, please **cite the paper and reference this repository**. (Currently unavailable because OSF accidentally disabled my account.)
 
 ---
 
