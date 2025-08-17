@@ -306,6 +306,13 @@ C:\Users\YOUR_USERNAME\.diac_dnc\gui_config.json
 - **Clear Startup Requirements:**  
   The README and codebase now guide you through missing dependencies (e.g., Tkinter) and common mistakes.
 
+## New Features and Improvements (2025-08)
+
+### Implemented DIAC Infinity 2
+Due to an imminent failure in DIAC Infinity 1, caused by its public key, and although DNC could still resist despite this vulnerability, I decided to upgrade to **DIAC Infinity 2**.  
+
+Since I cannot currently upload the DIAC Infinity 2 paper to OSF —even though it is revolutionary— I decided to implement it directly into DNC.
+
 ---
 
 **These features collectively make DNC more robust, user-friendly, and secure—ready for both power users and newcomers.**
