@@ -114,17 +114,12 @@ Below is a reproducible set of steps using PyInstaller on Windows. Replace `<You
     ```
 2.  From the project directory (cd into the folder containing the source files), build a single-file, windowed executable with a custom icon and name:
     ```bat
-"C:\Users\Kaoru\AppData\Local\Programs\Python\Python313\python.exe" ^
+"C:\Users\<YourUser>\AppData\Local\Programs\Python\Python313\python.exe" ^
  -m PyInstaller --onefile --windowed --clean ^
- --icon=diac_icon.ico --name "DIAC NET Client" ^
+ --icon="C:\Users\Kaoru\Documents\DIAC INFINITY 2 DNC\dnc2\diac_icon.ico" ^
+ --name "DIAC NET Client" ^
  --paths . ^
- --hidden-import diac_dnc_adapter ^
- --hidden-import diac_dnc_client_core ^
- --hidden-import pos_proof ^
- --hidden-import reputation ^
- --hidden-import guardians ^
- --hidden-import shamir ^
- --hidden-import range_zkp ^
+ --collect-all diac_dnc ^
  --debug all ^
  diac_client.py
     ```
