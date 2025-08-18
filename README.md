@@ -311,8 +311,6 @@ C:\Users\YOUR_USERNAME\.diac_dnc\gui_config.json
 ### Implemented DIAC Infinity 2
 Due to an imminent failure in DIAC Infinity 1, caused by its public key, and although DNC could still resist despite this vulnerability, I decided to upgrade to **DIAC Infinity 2**.  
 
-Since I cannot currently upload the DIAC Infinity 2 paper to OSF —even though it is revolutionary— I decided to implement it directly into DNC.
-
 ---
 
 **These features collectively make DNC more robust, user-friendly, and secure—ready for both power users and newcomers.**
@@ -352,7 +350,7 @@ For theoretical background and the broader framework, see the original paper:
 
 **https://doi.org/10.17605/OSF.IO/AYHPJ](https://doi.org/10.17605/OSF.IO/AYHPJ**
 
-If you build on this work, please **cite the paper and reference this repository**. (Currently unavailable because OSF accidentally disabled my account.)
+If you build on this work, please **cite the paper and reference this repository**.
 
 ## Alternative method to download the paper through Pinata IPFS
 https://ipfs.io/ipfs/bafybeigxajdmeelcrefuiiofm2mihohg5izd4va3u2jt76eqwkti4xoovq
